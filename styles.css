@@ -1,0 +1,164 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --pomodoro: rgb(186, 73, 73);
+  --shortBreak: rgb(56, 133, 138);
+  --longBreak: rgb(57, 112, 151);
+}
+
+body {
+  background-color: var(--pomodoro);
+  transition: background-color 1s ease;
+  user-select: none;
+}
+
+h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #fff;
+  margin-top: 50px;
+  font-family: 'Bruno Ace SC', cursive;
+  font-weight: 700;
+  text-align: center;
+}
+.above-icon{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+  margin: 20px auto;
+}
+.above-icon img{
+  width: 25px;
+}
+.above-icon a{
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.icons-111{
+display: flex;
+gap: 20px;
+}
+.icons-111 a{
+  padding: 7px 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+progress {
+  border-radius: 2px;
+  width: 55%;
+  height: 12px;
+  position: fixed;
+  top: 70px;
+  left: 346px;
+}
+#promofocus{
+  font-size: 23px;
+  font-weight: 700;
+}
+progress::-webkit-progress-bar {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+progress::-webkit-progress-value {
+  background-color: #fff;
+}
+
+.timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+}
+
+.clock {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 8rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  font-family: 'Bruno Ace SC', cursive;
+  color: white;
+  font-weight: 600;
+}
+
+.mode-button {
+  background: none;
+  border: none;
+  margin: 0px 5px;
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 7px 15px;
+  height: 35px;
+  cursor: pointer;
+  box-shadow: none;
+  color: white;
+  opacity: 1;
+  font-weight: 600;
+  font-family: 'Bruno Ace SC', cursive;
+  letter-spacing: 2px;
+}
+
+.mode-button.active {
+  background: none rgba(0, 0, 0, 0.15);
+}
+
+.main-button {
+  cursor: pointer;
+  border: none;
+  margin: 20px 0px 0px;
+  padding: 0px 12px;
+  border-radius: 4px;
+  box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+  font-family: 'Bruno Ace SC', cursive;
+  font-size: 22px;
+  height: 55px;
+  color: rgb(186, 73, 73);
+  font-weight: bold;
+  width: 200px;
+  background-color: white;
+  transition: color 0.5s ease-in-out 0s;
+  text-transform: uppercase;
+}
+
+button:focus,
+button:active {
+  outline: none;
+}
+
+.main-button.active {
+  transform: translateY(6px);
+  box-shadow: none;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .clock {
+    font-size: 8rem;
+  }
+}
