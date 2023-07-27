@@ -22,50 +22,36 @@ body {
   user-select: none;
 }
 
-h1{
+h1 {
   font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #fff;
   margin-top: 50px;
-  font-family: 'Bruno Ace SC', cursive;
+  font-family: "Bruno Ace SC", cursive;
   font-weight: 700;
   text-align: center;
+  margin-top: 50px;
 }
-.above-icon{
+.icons-111 {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 55%;
-  margin: 20px auto;
+  gap: 20px;
 }
-.above-icon img{
-  width: 25px;
-}
-.above-icon a{
-  text-decoration: none;
-  color: white;
-  font-size: 17px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.icons-111{
-display: flex;
-gap: 20px;
-}
-.icons-111 a{
+.icons-111 a {
   padding: 7px 15px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.1);
 }
 progress {
   border-radius: 2px;
-  width: 55%;
+  width: 100%;
   height: 12px;
-  position: fixed;
-  top: 70px;
-  left: 346px;
+  position: sticky;
+  top: 0;
+  left: 50%;
+  padding: 0 50px;
 }
-#promofocus{
+#promofocus {
   font-size: 23px;
   font-weight: 700;
 }
@@ -98,7 +84,7 @@ progress::-webkit-progress-value {
   line-height: 1;
   display: flex;
   align-items: center;
-  font-family: 'Bruno Ace SC', cursive;
+  font-family: "Bruno Ace SC", cursive;
   color: white;
   font-weight: 600;
 }
@@ -116,7 +102,7 @@ progress::-webkit-progress-value {
   color: white;
   opacity: 1;
   font-weight: 600;
-  font-family: 'Bruno Ace SC', cursive;
+  font-family: "Bruno Ace SC", cursive;
   letter-spacing: 2px;
 }
 
@@ -131,7 +117,7 @@ progress::-webkit-progress-value {
   padding: 0px 12px;
   border-radius: 4px;
   box-shadow: rgb(235, 235, 235) 0px 6px 0px;
-  font-family: 'Bruno Ace SC', cursive;
+  font-family: "Bruno Ace SC", cursive;
   font-size: 22px;
   height: 55px;
   color: rgb(186, 73, 73);
@@ -160,5 +146,82 @@ button:active {
 @media screen and (max-width: 550px) {
   .clock {
     font-size: 8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .timer {
+    margin-top: 30px;
+  }
+  #js-mode-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1380px) {
+  .timer {
+    margin-top: 30px;
+  }
+  #js-mode-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 600px) {
+  .timer {
+    margin-top: 30px;
+    padding: 25px 30px;
+  }
+  #js-mode-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  h1{
+    font-size: 35px;
+  }
+  #js-clock{
+    font-size: 80px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .timer {
+    margin-top: 30px;
+    padding: 25px 30px;
+  }
+  #js-mode-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  h1{
+    font-size: 35px;
+  }
+  #js-clock{
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .timer {
+    margin-top: 30px;
+    padding: 25px 30px;
+  }
+  #js-mode-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  h1{
+    font-size: 20px;
+  }
+  #js-clock{
+    font-size: 60px;
   }
 }
