@@ -75,6 +75,7 @@ progress::-webkit-progress-value {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 7px;
+  width: 50%;
 }
 
 .clock {
@@ -161,7 +162,8 @@ button:active {
 }
 @media screen and (min-width: 768px) and (max-width: 1380px) {
   .timer {
-    margin-top: 30px;
+    margin-top: 70px;
+    width: 70%;
   }
   #js-mode-buttons {
     display: flex;
@@ -170,11 +172,17 @@ button:active {
     gap: 20px;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .timer{
+    width: 85%;
+  }
+}
 
 @media screen and (min-width: 425px) and (max-width: 600px) {
   .timer {
     margin-top: 30px;
     padding: 25px 30px;
+    width: 75%;
   }
   #js-mode-buttons {
     display: flex;
@@ -193,6 +201,7 @@ button:active {
   .timer {
     margin-top: 30px;
     padding: 25px 30px;
+    width: 80%;
   }
   #js-mode-buttons {
     display: flex;
@@ -211,6 +220,7 @@ button:active {
   .timer {
     margin-top: 30px;
     padding: 25px 30px;
+    width: 90%;
   }
   #js-mode-buttons {
     display: flex;
